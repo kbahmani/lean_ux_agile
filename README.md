@@ -1,2 +1,2 @@
-lean_ux_agile
+Lean UX and Agile development process
 =============
