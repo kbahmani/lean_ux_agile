@@ -58,5 +58,6 @@ steal(
 	'global/lib/can.construct.super.js',
 	'global/lib/can.control.plugin.js',
 	'global/lib/can.control.view.js',
-	'global/lib/can.view.modifiers.js'
+	'global/lib/can.view.modifiers.js',
+	'global/css/layout.css'
 )
