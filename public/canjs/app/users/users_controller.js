@@ -3,6 +3,16 @@ can.Control("App.Users",{},
 	init: function(element) { 
 		this.container = this.element;
 		this.element.html(can.view('../app/users/ejs/user_layout.ejs'));
+		this.init_user_list();
+	},
+	init_user_list: function(){
+		var panel = this.element.find('.user_list');
+		var User = App.User;
+		User.findAll( {}, function( list ) {
+			for(var i=0;i<list.length;i++){
+				panel.append(can.view('../app/users/ejs/user.ejs', {data: list[i]}))
+			}
+		});
 	},
 	'.add_user click': function(ui, event){
 		var self = this;

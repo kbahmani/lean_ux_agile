@@ -105,3 +105,47 @@
 	top: 20px;
 	width: 420px;
 }
+
+.user_row{
+	height: 35px;
+	font-size: 24px;
+	color: #3E3E3E;
+	text-transform: capitalize;
+	margin-top: 1px;
+}
+
+.user_row:hover{
+	border: 1px solid #71b9c1;
+	background-color: #71b9c1;
+}
+
+.ur_name{
+	width: 300px;
+}
+
+.user_row:hover .ur_delete, .user_row:hover .ur_edit{
+	display: block;
+}
+
+.ur_delete{
+	position: relative;
+	cursor: pointer;
+	display:none;
+	background: url("../../global/image/trashIcon.png") no-repeat;
+	width: 14px;
+	height: 17px;
+	top: -23px;
+	left: 370px;
+}
+
+.ur_edit{
+	position: relative;
+	cursor: pointer;
+	display:none;
+	background: url("../../global/image/editIcon.png") no-repeat;
+	
+	width: 15px;
+	height: 15px;
+	top: -39px;
+	left: 395px;
+}

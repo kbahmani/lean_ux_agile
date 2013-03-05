@@ -1,1 +1,5 @@
-<div><span><%= data.name %></span></div>
+<div class="user_row" <%= (el) -> el.data( 'model', data ) %>>
+  <div class="ur_name">&#8226;&nbsp;<span><%= data.name %></span></div>
+  <div class="ur_delete"></div>
+  <div class="ur_edit"></div>
+</div>
