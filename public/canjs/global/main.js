@@ -6,7 +6,7 @@ steal(
     'global/lib/jquerypp/jquery.cookie.js',   // load jquery++ cookie
     'global/lib/jquerypp/jquery.form_params.js',
     'global/css/jquery-ui-1.8.15.custom.css',
-		'../app/users/users_controller.js'
+		'../app/users/users.js'
 )
 .then(function(){
     // restore the globe states from sessionStorage

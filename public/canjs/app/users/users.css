@@ -1,0 +1,53 @@
+.header{
+	font-size: 24px;
+	color: #000;
+	width: 290px;
+	height: 30px;
+}
+
+.head_start{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.head_end{
+	text-transform: capitalize;
+	font-weight: lighter;
+}
+
+.user_form{
+	position: relative;
+	width: 420px;
+	height: 160px;
+	top: 20px;
+}
+
+.input_wrap{
+	border: 1px solid #A4A4A4;
+	width: 202px;
+	height: 43px;
+}
+
+.form_input{
+	position: relative;
+	width: 192px;
+	height: 33px;
+	font-size: 18px;
+	color: #AEAEAE;
+	font-weight: lighter;
+	padding: 5px;
+	border: 0px;
+	outline: 0px;
+}
+
+.first_name{
+	
+}
+
+.last_name{
+	
+}
+
+.email{
+	
+}
