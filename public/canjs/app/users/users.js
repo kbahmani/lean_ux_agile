@@ -1,5 +1,5 @@
 steal(
-	"./users_model.js",
 	"./users_controller.js",
+	"./user_model.js",
 	"./users.css"
 )
