@@ -23,17 +23,18 @@
 }
 
 .input_wrap{
+	position: relative;
 	border: 1px solid #A4A4A4;
 	width: 202px;
 	height: 43px;
 }
 
 .form_input{
-	position: relative;
 	width: 192px;
 	height: 33px;
 	font-size: 18px;
 	color: #AEAEAE;
+	background-color: #EFEEEA;
 	font-weight: lighter;
 	padding: 5px;
 	border: 0px;
@@ -45,9 +46,46 @@
 }
 
 .last_name{
-	
+	top: -45px;
+	left: 215px;
 }
 
 .email{
-	
+	top: -33px;
+	width: 416px;
+}
+
+.email input{
+	width: 406px;
+}
+
+.add_user{
+	position: relative;
+	width: 95px;
+	height: 43px;
+	background-color: #2CA7B9;
+	border: 1px solid #2190A0;
+	text-transform: capitalize;
+	font-size: 24px;
+	color: #FFF;
+	top: -20px;
+	left: 320px;
+	cursor: pointer;
+}
+
+.plus_img{
+	background: url("../../global/image/plusSign.png") no-repeat;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	width: 25px;
+	height: 25px;
+}
+
+.plus_txt{
+	position: relative;
+	width: 45px;
+	height: 30px;
+	left: 45px;
+	top: -20px;
 }

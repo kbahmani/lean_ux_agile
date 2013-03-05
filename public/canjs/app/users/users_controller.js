@@ -1,4 +1,4 @@
-can.Control("Fuzz.App.Users",{},
+can.Control("App.Users",{},
 {
 	init: function(element) { 
 		this.container = this.element;

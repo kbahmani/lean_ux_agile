@@ -42,7 +42,7 @@ steal(
             var sub = data['sub'];
             var self = this;
 						if(widget === 'users') {
-                var fuzzPlayer = new Fuzz.App.Users("#contents");
+                var fuzzPlayer = new App.Users("#contents");
             }
             app_state.attr('route', {'widget': widget, 'sub': sub});
         }
