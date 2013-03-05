@@ -55,6 +55,9 @@ can.Control("App.Users",{},
 		user.name = user_row.find('.first_name input').val();
 		user.family = user_row.find('.last_name input').val();
 		user.email = user_row.find('.email input').val();
+		user._data.name  = user.name;
+		user._data.family= user.family;
+		user._data.email = user.email;
 		user.save(function( user ) {
 			user_row.after(can.view('../app/users/ejs/user.ejs', {data: user}));
 			user_row.remove();
