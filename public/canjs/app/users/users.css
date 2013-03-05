@@ -103,7 +103,7 @@
 .user_list{
 	position: relative;
 	top: 20px;
-	width: 420px;
+	width: 500px;
 }
 
 .user_row{
@@ -135,7 +135,7 @@
 	width: 14px;
 	height: 17px;
 	top: -23px;
-	left: 370px;
+	left: 440px;
 }
 
 .ur_edit{
@@ -143,9 +143,42 @@
 	cursor: pointer;
 	display:none;
 	background: url("../../global/image/editIcon.png") no-repeat;
-	
 	width: 15px;
 	height: 15px;
 	top: -39px;
-	left: 395px;
+	left: 470px;
+}
+
+.edit_user{
+	position: relative;
+	width: 490px;
+	height: 102px;
+	background-color: #71B9C1;
+	padding: 5px;
+	margin-top: 1px;
+}
+
+.edit_user input{
+	color: #4E4D4C;
+	background-color: #C8E3E6;
+}
+
+.eu_delete{
+	position: relative;
+	cursor: pointer;
+	background: url("../../global/image/trashIcon.png") no-repeat;
+	width: 14px;
+	height: 17px;
+	top: -65px;
+	left: 435px;
+}
+
+.eu_save_close{
+	position: relative;
+	cursor: pointer;
+	background: url("../../global/image/cancelIcon.png") no-repeat;
+	width: 14px;
+	height: 17px;
+	top: -80px;
+	left: 467px;
 }

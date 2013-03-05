@@ -28,5 +28,36 @@ can.Control("App.Users",{},
 		user.save(function( user ) {
 		  self.element.find('.user_list').append(can.view('../app/users/ejs/user.ejs', {data: user}))
 		});
+	},
+	'.ur_delete click': function(ui, event){
+		var user_row = ui.parent();
+		var user = user_row.data('model');
+		user.destroy(function( user ) {
+		   user_row.remove();
+		});
+	},
+	'.eu_delete click': function(ui, event){
+		var user_row = ui.parent();
+		var user = user_row.data('model');
+		user.destroy(function( user ) {
+		   user_row.remove();
+		});
+	},
+	'.ur_edit click': function(ui, event){
+		var user_row = ui.parent();
+		var user = user_row.data('model');
+		user_row.after(can.view('../app/users/ejs/user_form.ejs', {data: user}));
+		user_row.remove();
+	},
+	'.eu_save_close click': function(ui, evevnt){
+		var user_row = ui.parent();
+		var user = user_row.data('model');
+		user.name = user_row.find('.first_name input').val();
+		user.family = user_row.find('.last_name input').val();
+		user.email = user_row.find('.email input').val();
+		user.save(function( user ) {
+			user_row.after(can.view('../app/users/ejs/user.ejs', {data: user}));
+			user_row.remove();
+		});
 	}	
 });
