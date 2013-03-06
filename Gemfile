@@ -22,6 +22,14 @@ end
 
 gem 'jquery-rails'
 
+group :test, :development do
+	gem 'selenium-webdriver'
+	gem 'capybara', '~> 1.1.2'
+	gem 'capybara-webkit'
+	gem 'headless', '0.3.1'
+	gem 'rspec-rails', '~> 2.7.0'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
